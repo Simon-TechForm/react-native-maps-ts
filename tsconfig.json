@@ -10,6 +10,7 @@
     "strict": true,
     "target": "esnext",
     "declaration": true,
+    "removeComments": true,
     "noEmit": false,
     "outDir": "lib"
   }

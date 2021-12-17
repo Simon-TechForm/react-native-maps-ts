@@ -1,18 +1,31 @@
 {
-  "name": "react-native-maps",
+  "name": "react-native-maps-ts",
   "description": "React Native Mapview component for iOS + Android",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Leland Richardson <leland.m.richardson@gmail.com>",
-  "version": "0.30.0",
+  "version": "1.0.0",
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
     "prepare": "husky install",
+    "release": "semantic-release",
     "test": "jest"
   },
+  "files": [
+    "lib",
+    "android",
+    "ios",
+    "react-native-maps.podspec",
+    "react-native-google-maps.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-maps/react-native-maps"
+    "url": "https://github.com/Simon-TechForm/react-native-maps-ts"
   },
   "keywords": [
     "react",
@@ -32,12 +45,14 @@
     "@commitlint/cli": "15.0.0",
     "@commitlint/config-conventional": "15.0.0",
     "@react-native-community/eslint-config": "^3.0.1",
+    "@types/react-native": "0.66.9",
     "babel-jest": "^27.3.1",
     "eslint": "7.32.0",
     "husky": "7.0.4",
     "jest": "^27.3.1",
     "react": "^17.0.2",
     "react-native": "^0.66.3",
+    "semantic-release": "18.0.1",
     "typescript": "^4.4.3"
   },
   "dependencies": {

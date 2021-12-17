@@ -1,13 +1,10 @@
-name: Pull Request
-
+name: Beta Push
 on:
-  pull_request:
+  push:
     branches:
-      - main
       - beta
-
 jobs:
-  lint-build-test:
+  release:
     runs-on: ubuntu-20.04
     env:
       HUSKY: 0
@@ -29,3 +26,9 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: yarn release
