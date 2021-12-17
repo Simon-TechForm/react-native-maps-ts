@@ -3,11 +3,12 @@
   "description": "React Native Mapview component for iOS + Android",
   "main": "lib/index.js",
   "author": "Leland Richardson <leland.m.richardson@gmail.com>",
-  "version": "0.30.0",
+  "version": "1.0.0",
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
     "prepare": "husky install",
+    "release": "semantic-release",
     "test": "jest"
   },
   "files": [
