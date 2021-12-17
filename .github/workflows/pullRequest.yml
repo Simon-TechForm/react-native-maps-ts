@@ -21,10 +21,10 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn --immutable
+        run: yarn --frozen-lockfile
 
       - name: Lint
         run: yarn lint
 
       - name: Build
-        run: yarn typescript
+        run: yarn build
