@@ -1,4 +1,4 @@
-declare module 'react-native-maps' {
+declare module 'react-native-maps-ts' {
   import * as React from 'react';
   import {
     Animated as RNAnimated,
