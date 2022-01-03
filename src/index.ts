@@ -1,6 +1,7 @@
-import MapView, { Animated, MAP_TYPES } from './MapView';
-import Marker, { Animated as MarkerAnimated } from './MapMarker';
-import Overlay, { Animated as OverlayAnimated } from './MapOverlay';
+import MapView, { Animated, MAP_TYPES, ProviderPropType } from './MapView';
+import Marker from './MapMarker';
+import Overlay from './MapOverlay';
+
 export { default as Polyline } from './MapPolyline';
 export { default as Heatmap } from './MapHeatmap';
 export { default as Polygon } from './MapPolygon';
@@ -14,12 +15,11 @@ export { default as AnimatedRegion } from './AnimatedRegion';
 export { default as Geojson } from './Geojson';
 
 export { Marker, Overlay };
-export { Animated, MAP_TYPES };
+export { Animated, MAP_TYPES, ProviderPropType };
 
-export { PROVIDER_GOOGLE } from './ProviderConstants';
-export { PROVIDER_DEFAULT } from './ProviderConstants';
+export * from './ProviderConstants';
 
-export { MarkerAnimated };
-export { OverlayAnimated };
+export const MarkerAnimated = Marker.Animated;
+export const OverlayAnimated = Overlay.Animated;
 
 export default MapView;

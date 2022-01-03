@@ -7,11 +7,11 @@
     "lib": ["es2017"],
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "strict": true,
     "target": "esnext",
-    "declaration": true,
+    "declaration": false,
+    "allowJs": true,
     "removeComments": true,
-    "noEmit": false,
-    "outDir": "lib"
-  }
+    "outDir": "lib",
+  },
+  "include": ["src"]
 }

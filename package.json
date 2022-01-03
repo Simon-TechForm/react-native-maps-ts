@@ -2,7 +2,7 @@
   "name": "react-native-maps-ts",
   "description": "React Native Mapview component for iOS + Android",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "index.d.ts",
   "author": "Leland Richardson <leland.m.richardson@gmail.com>",
   "version": "1.0.0",
   "scripts": {
@@ -43,10 +43,10 @@
     "react-native-web": ">= 0.11"
   },
   "devDependencies": {
-    "@commitlint/cli": "15.0.0",
-    "@commitlint/config-conventional": "15.0.0",
+    "@commitlint/cli": "16.0.1",
+    "@commitlint/config-conventional": "16.0.0",
     "@react-native-community/eslint-config": "^3.0.1",
-    "@types/react-native": "0.66.9",
+    "@types/react-native": "0.66.11",
     "babel-jest": "^27.3.1",
     "eslint": "7.32.0",
     "husky": "7.0.4",
