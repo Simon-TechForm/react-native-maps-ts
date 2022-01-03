@@ -15,6 +15,7 @@
   "files": [
     "lib",
     "android",
+    "index.d.ts",
     "ios",
     "react-native-maps-ts.podspec",
     "react-native-google-maps.podspec",
