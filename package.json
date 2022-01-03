@@ -2,7 +2,7 @@
   "name": "react-native-maps-ts",
   "description": "React Native Mapview component for iOS + Android",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "index.d.ts",
   "author": "Leland Richardson <leland.m.richardson@gmail.com>",
   "version": "1.0.0",
   "scripts": {
